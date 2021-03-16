@@ -1,0 +1,12 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.idea
+/build
+.externalNativeBuild
+
+# Project exclude paths
+/libuvccamera/build/
+/libuvccamera/build/intermediates/javac/debug/classes/
