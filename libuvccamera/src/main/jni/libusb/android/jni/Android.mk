@@ -21,3 +21,10 @@ LOCAL_PATH:= $(call my-dir)
 include $(LOCAL_PATH)/libusb.mk
 #include $(LOCAL_PATH)/examples.mk
 #include $(LOCAL_PATH)/tests.mk
+
+ifeq ($(TARGET_ARCH_ABI),x86)
+
+else
+LOCAL_CFLAGS += -fsanitize=hwaddress -fno-omit-frame-pointer
+LOCAL_LDFLAGS += -fsanitize=hwaddress
+endif
