@@ -13,4 +13,4 @@ ndk library for https://github.com/jiangdongguo/AndroidUSBCamera
 
 - 1.0.0.20210316
 
-fix stopPreview Crash
+fix a stopPreview Crash
