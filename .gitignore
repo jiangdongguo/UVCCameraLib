@@ -10,3 +10,4 @@
 # Project exclude paths
 /libuvccamera/build/
 /libuvccamera/build/intermediates/javac/debug/classes/
+/libuvccamera/.cxx/

@@ -2,11 +2,10 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.android.tools.build:gradle:4.2.1'
     }
 }
 
@@ -14,7 +13,7 @@ allprojects {
     repositories {
         google()
         maven { url 'http://raw.github.com/saki4510t/libcommon/master/repository/' }
-        jcenter()
+        mavenCentral()
     }
 }
 
@@ -25,9 +24,9 @@ task clean(type: Delete) {
 ext {
     androidXVersion = '1.1.0'  // variable that can be referenced to keep support libs consistent
     commonLibVersion= '4.1.1'
-    versionCompiler = 28
+    versionCompiler = 30
     // when target=27, 9.0 is ok
-    versionTarget = 27
+    versionTarget = 30
     // if hope supporting 4.4
     // please modify it to 16
     minSdkVersion = 21

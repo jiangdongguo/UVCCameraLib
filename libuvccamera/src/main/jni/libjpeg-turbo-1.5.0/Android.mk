@@ -208,6 +208,8 @@ LOCAL_SRC_FILES += \
 LOCAL_CFLAGS += \
 	-DSIZEOF_SIZE_T=4 \
 
+LOCAL_ASMFLAGS += -DPIC
+
 else ifeq ($(TARGET_ARCH_ABI),mips)
 
 # Unfortunately it seems Clang in NDK(at least until r14)

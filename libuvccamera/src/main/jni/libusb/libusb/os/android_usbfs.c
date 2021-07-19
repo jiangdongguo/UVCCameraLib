@@ -2724,6 +2724,9 @@ static int handle_iso_completion(struct libusb_device_handle *handle,	// XXX add
 	int i;
 	enum libusb_transfer_status status = LIBUSB_TRANSFER_COMPLETED;
 
+	if (LIBUSB_TRANSFER_NO_DEVICE == transfer->status) {
+        return LIBUSB_ERROR_NO_DEVICE;
+	}
 	usbi_mutex_lock(&itransfer->lock);
 	for (i = 0; i < num_urbs; i++) {
 	    // 修复拨出摄像头崩溃(addr2line)

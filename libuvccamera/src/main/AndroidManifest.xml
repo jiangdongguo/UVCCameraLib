@@ -26,6 +26,4 @@
     android:versionCode="2"
     android:versionName="1.1" >
 
-    <uses-sdk android:targetSdkVersion="22" />
-
 </manifest>
